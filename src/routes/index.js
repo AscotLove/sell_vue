@@ -2,6 +2,7 @@ import Msite from '../pages/Msite/Msite';
 import Order from '../pages/Order/Order';
 import Profile from '../pages/Profile/Profile';
 import Search from '../pages/Search/Search';
+import Login from '../pages/Login/Login';
 
 
   const routes = [
@@ -33,7 +34,10 @@ import Search from '../pages/Search/Search';
         showFooterGuide: true
       }
     },
-
+    {
+      path: "/Login",
+      component: Login,
+    },
     {
       path: "/",
       redirect: "/Msite",

@@ -3,7 +3,7 @@
     <section class="profile">
       <HeaderTop :title="'我的'" />
       <section class="profile-number">
-        <a href="javascript:" class="profile-link">
+        <a href="javascript:" class="profile-link" @click="goto">
           <div class="profile_image">
             <i class="iconfont icon-person"></i>
           </div>
@@ -99,6 +99,11 @@
     name: "Profile",
     components: {
       HeaderTop
+    },
+    methods: {
+      goto() {
+        this.$router.push('/Login')
+      }
     }
   }
 </script>

@@ -7,7 +7,7 @@
           <i class="iconfont icon-sousuo"></i>
         </span>
         <span class="header_login" slot="right">
-          <span class="header_login_text">登录|注册</span>
+          <span class="header_login_text" @click="goto">登录|注册</span>
         </span>
       </HeaderTop>
       <!--首页导航-->
@@ -36,7 +36,10 @@
       NavList
     },
     methods: {
-      ...mapActions(['addressUpdate', 'categoryUpdate'])
+      ...mapActions(['addressUpdate', 'categoryUpdate']),
+      goto() {
+        this.$router.push('/Login')
+      }
     },
     mounted() {
       this.addressUpdate();

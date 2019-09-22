@@ -43,13 +43,13 @@ import _ from 'lodash';
           })
         },
     },
-    watch: {
+   /* watch: {
       categoriesArr() {
         this.$nextTick(() => {
           this.newSwiper()
         })
       }
-    }
+    }*/
 
   }
 </script>
