@@ -1,0 +1,11 @@
+import axios from 'axios';
+
+
+
+const msiteInstance = axios.create({
+  timeout: 7000
+})
+
+
+
+export default msiteInstance
