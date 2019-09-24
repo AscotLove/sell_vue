@@ -1,8 +1,8 @@
-import ajaxInstance from './ajax';
-import apis from './assets/api-options';
-import { axiosHttp } from '../utils';
+import loginApi from './Login';
+import msiteApi from './Msite'
 
-const msiteApi = axiosHttp(apis, ajaxInstance);
+
 export {
-  msiteApi,
+  loginApi,
+  msiteApi
 }

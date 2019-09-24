@@ -3,10 +3,13 @@ import App from './App.vue';
 
 import router from './router';
 import store from './store';
+import './validate';
 
+import HeaderTop from './components/HeaderTop/HeaderTop';
 
 Vue.config.productionTip = false;
 
+Vue.component("HeaderTop", HeaderTop);
 
 new Vue({
   render: h => h(App),

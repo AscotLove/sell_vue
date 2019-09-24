@@ -9,10 +9,10 @@ module.exports = {
 
     proxy: {
       '/4000': { // 匹配所有以 '/api'开头的请求路径
-        target: 'http://192.168.191.1:4000', // 代理目标的基础路径
+        target: 'http://192.168.3.113:4000', // 代理目标的基础路径
         changeOrigin: true, // 支持跨域
         pathRewrite: { // 重写路径: 去掉路径中开头的'/api'
-          '^/4000': ''
+          '^/4000': ""
         }
       },
       '/baidu': { // 匹配所有以 '/baidu'开头的请求路径
@@ -32,8 +32,8 @@ module.exports = {
     resolve: {
       alias: {
         'components': resolve('src/components'),
-        "pages":resolve('src/pages'),
-
+        "pages": resolve('src/pages'),
+        "@store": resolve('src/store')
       }
     },
   }

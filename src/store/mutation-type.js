@@ -6,4 +6,6 @@ export const ADDRESS_UPDATE = 'address_update';
 
 export const CATEGORY_UPDATE = 'category_update';
 
+export const USER_UPDATE = 'user_update';
+
 
